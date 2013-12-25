@@ -1,0 +1,29 @@
+development:
+  adapter: mysql2
+  encoding: UTF8
+  database: ff_dev
+  pool: 5
+  username: root
+  password: "clroot0987"
+  host: 127.0.0.1
+  port: 3306
+  
+test:
+  adapter: mysql2
+  encoding: UTF8
+  database: ff_test
+  pool: 5
+  username: root
+  password: "clroot0987"
+  host: 127.0.0.1
+  port: 3306
+
+production:
+  adapter: mysql2
+  encoding: UTF8
+  database: ff
+  pool: 5
+  username: root
+  password: "clroot0987"
+  host: 127.0.0.1
+  port: 3306
