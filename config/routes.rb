@@ -1,6 +1,6 @@
 FlyingFood::Application.routes.draw do
-  root :to => 'top_page#index'
-  get "top_page/index", as: :top_page_index 
+  root :to => 'top_page#index' 
+  #get "top_page/index" 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
