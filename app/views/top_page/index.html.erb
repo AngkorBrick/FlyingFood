@@ -1,4 +1,67 @@
 <% content_for :contents do %>
-<h1>TopPage#index</h1>
-<p>Find me in app/views/top_page/index.html.erb</p>
+<div class="input-group">
+      <input type="text" class="form-control" placeholder="Search manu or restaurant here">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Search <span class="glyphicon glyphicon-search"></span> <span class="caret"></span></button>
+        <ul class="dropdown-menu pull-right">
+          <li><a href="#">Manu</a></li>
+          <li><a href="#">Restaurant</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+    </div><!-- /input-group -->
+<div style="padding-top: 10px;">
+	<div style="margin-right: 170px;" class="alert alert-info">Search result: <b>505 restaurants</b> and <b>4209 manu</b> are found here.</div>
+</div>
+<div class="table-responsive">
+  <table class="table">
+    <tr>
+        	<div class="row">
+        	    <div class="col-md-4">
+        	    	<%= link_to image_tag("menu.jpg",:size=>"200x180"),root_path,:class=>"thumbnail"%>
+        	    </div>
+        		<div class="col-md-5">
+        			<div>Title</div>
+        			<div>Catagory</div>
+        			<div>Restaurant</div>
+        			<div>Address</div>
+        			<div>Number of Orders</div>
+        			<div>Rate</div>
+        		</div>
+        		<div class="col-md-3"></div>
+        	</div>
+    </tr>
+    <tr>
+        	<div class="row">
+        	    <div class="col-md-4">
+        	    	<%= link_to image_tag("menu.jpg",:size=>"200x180"),root_path,:class=>"thumbnail"%>
+        	    </div>
+        		<div class="col-md-5">
+        			<div>Title</div>
+        			<div>Catagory</div>
+        			<div>Restaurant</div>
+        			<div>Address</div>
+        			<div>Number of Orders</div>
+        			<div>Rate</div>
+        		</div>
+        		<div class="col-md-3"></div>
+        	</div>
+    </tr>
+    <tr>
+        	<div class="row">
+        	    <div class="col-md-4">
+        	    	<%= link_to image_tag("menu.jpg",:size=>"200x180"),root_path,:class=>"thumbnail"%>
+        	    </div>
+        		<div class="col-md-5">
+        			<div>Title</div>
+        			<div>Catagory</div>
+        			<div>Restaurant</div>
+        			<div>Address</div>
+        			<div>Number of Orders</div>
+        			<div>Rate</div>
+        		</div>
+        		<div class="col-md-3"></div>
+        	</div>
+    </tr>
+  </table>
+</div>
 <%end%>

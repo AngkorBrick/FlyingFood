@@ -126,6 +126,7 @@
     <div class="row">
   		<div class="col-md-1"></div>
   		<div class="col-md-7">
+  			<ol class="breadcrumb"><%= render_breadcrumbs :separator => ' | '%></ol>
   			<%= yield :contents%>
   		</div>
   		<div class="col-md-2">

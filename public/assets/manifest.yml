@@ -9,6 +9,14 @@ glyphicons-halflings-regular.woff: glyphicons-halflings-regular.woff
 glyphicons-halflings-regular/index.woff: glyphicons-halflings-regular.woff
 rails.png: rails.png
 rails/index.png: rails.png
+restro_page.png: restro_page.png
+restro_page/index.png: restro_page.png
+slide1.png: slide1.png
+slide1/index.png: slide1.png
+slide2.jpg: slide2.jpg
+slide2/index.jpg: slide2.jpg
+slide3.png: slide3.png
+slide3/index.png: slide3.png
 application.js: application.js
 application/index.js: application.js
 application.css: application.css
