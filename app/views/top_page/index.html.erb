@@ -2,7 +2,7 @@
 <div class="input-group">
       <input type="text" class="form-control" placeholder="Search manu or restaurant here">
       <div class="input-group-btn">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Search <span class="glyphicon glyphicon-search"></span> <span class="caret"></span></button>
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-search"></span> <span class="caret"></span></button>
         <ul class="dropdown-menu pull-right">
           <li><a href="#">Manu</a></li>
           <li><a href="#">Restaurant</a></li>
@@ -12,56 +12,131 @@
 <div style="padding-top: 10px;">
 	<div style="margin-right: 170px;" class="alert alert-info">Search result: <b>505 restaurants</b> and <b>4209 manu</b> are found here.</div>
 </div>
-<div class="table-responsive">
+<div style="background-color: #FFCCFF;border-style: groove;margin-bottom: 10px;" class="table-responsive">
   <table class="table">
+  	<span style="font-size: 20px;color: red;" class="glyphicon glyphicon-bookmark">Featured</span>
     <tr>
-        	<div class="row">
+        	<div style="margin-top: 10px;margin-left: 10px;" class="row">
         	    <div class="col-md-4">
-        	    	<%= link_to image_tag("menu.jpg",:size=>"200x180"),root_path,:class=>"thumbnail"%>
+        	    	<a href="#" class="thumbnail" data-toggle="modal" data-target="#myModal"><%=image_tag("menu.jpg",:size=>"200x180")%></a>
         	    </div>
         		<div class="col-md-5">
-        			<div>Title</div>
-        			<div>Catagory</div>
-        			<div>Restaurant</div>
-        			<div>Address</div>
-        			<div>Number of Orders</div>
-        			<div>Rate</div>
+        			<h3>Fried Potato</h3><div style="color: red;">15$ <%=link_to "+Delivery rate"%></div>
+        			<div style="color: grey;">Lunch <%=link_to "@Topaz",root_path%></div>
+        			<i style="color: grey;">
+        				<div>Review:
+        				<span style="color: orange;">
+        					<span class="glyphicon glyphicon-star-empty"></span>
+        					<span class="glyphicon glyphicon-star-empty"></span>
+        					<span class="glyphicon glyphicon-star-empty"></span>
+        					<span class="glyphicon glyphicon-star-empty"></span>
+        					<span class="glyphicon glyphicon-star-empty"></span>
+        				</span>
+        				<span>(<span class="glyphicon glyphicon-user">1230</span>)</span> 
+        				</div>
+        				<div>1459 people order it</div>
+        			</i>
+        			<div style="margin-top: 10px;">
+        				<div style="font-size: 14px;" class="label label-primary">Order now! Call: 069 900 910</div>
+        			</div>
         		</div>
-        		<div class="col-md-3"></div>
-        	</div>
-    </tr>
-    <tr>
-        	<div class="row">
-        	    <div class="col-md-4">
-        	    	<%= link_to image_tag("menu.jpg",:size=>"200x180"),root_path,:class=>"thumbnail"%>
-        	    </div>
-        		<div class="col-md-5">
-        			<div>Title</div>
-        			<div>Catagory</div>
-        			<div>Restaurant</div>
-        			<div>Address</div>
-        			<div>Number of Orders</div>
-        			<div>Rate</div>
+        		<div class="col-md-3">
+        			<div>Rate it now:</div>
+        			<div>
+        				<a href="#"><span class="glyphicon glyphicon-star-empty"></span></a>
+        				<a href="#"><span class="glyphicon glyphicon-star-empty"></span></a>
+        				<a href="#"><span class="glyphicon glyphicon-star-empty"></span></a>
+        				<a href="#"><span class="glyphicon glyphicon-star-empty"></span></a>
+        				<a href="#"><span class="glyphicon glyphicon-star-empty"></span></a> 
+        			</div>
+        			<button style="margin-top: 5px;" type="button" class="btn btn-danger">Add to My Favorite</button>
+        			<button style="margin-top: 55px;" type="button" class="btn btn-success">Order</button>
         		</div>
-        		<div class="col-md-3"></div>
         	</div>
-    </tr>
-    <tr>
-        	<div class="row">
-        	    <div class="col-md-4">
-        	    	<%= link_to image_tag("menu.jpg",:size=>"200x180"),root_path,:class=>"thumbnail"%>
-        	    </div>
-        		<div class="col-md-5">
-        			<div>Title</div>
-        			<div>Catagory</div>
-        			<div>Restaurant</div>
-        			<div>Address</div>
-        			<div>Number of Orders</div>
-        			<div>Rate</div>
-        		</div>
-        		<div class="col-md-3"></div>
-        	</div>
+			<div class="modal fade" id="myModal">
+  				<div style="width: 650px;height: 720px;" class="modal-dialog">
+    				<div class="modal-content">
+      					<div class="modal-header">
+        					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        					<h4 class="modal-title">Fried Potato</h4>
+      					</div>
+      					<div class="modal-body">
+        					<%=image_tag("menu.jpg",:size=>"600x540")%>
+      					</div>
+    				</div><!-- /.modal-content -->
+  				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
     </tr>
   </table>
 </div>
+<% (1..5).each do |i|%>
+<div style="border-style: groove;margin-bottom: 10px;" class="table-responsive">
+  <table class="table">
+    <tr>
+        	<div style="margin-top: 20px;margin-left: 10px;"  class="row">
+        	    <div class="col-md-4">
+        	    	<a href="#" class="thumbnail" data-toggle="modal" data-target="#myModal"><%=image_tag("menu.jpg",:size=>"200x180")%></a>
+        	    </div>
+        		<div class="col-md-5">
+        			<h3>Fried Potato</h3><div style="color: red;">15$ <%=link_to "+Delivery rate"%></div>
+        			<div style="color: grey;">Lunch <%=link_to "@Topaz",root_path%></div>
+        			<i style="color: grey;">
+        				<div>Review:
+        				<span style="color: orange;">
+        					<span class="glyphicon glyphicon-star-empty"></span>
+        					<span class="glyphicon glyphicon-star-empty"></span>
+        					<span class="glyphicon glyphicon-star-empty"></span>
+        					<span class="glyphicon glyphicon-star-empty"></span>
+        					<span class="glyphicon glyphicon-star-empty"></span>
+        				</span>
+        				<span>(<span class="glyphicon glyphicon-user">1230</span>)</span> 
+        				</div>
+        				<div>1459 people order it</div>
+        			</i>
+        			<div style="margin-top: 10px;">
+        				<div style="font-size: 14px;" class="label label-primary">Order now! Call: 069 900 910</div>
+        			</div>
+        		</div>
+        		<div class="col-md-3">
+        			<div>Rate it now:</div>
+        			<div>
+        				<a href="#"><span class="glyphicon glyphicon-star-empty"></span></a>
+        				<a href="#"><span class="glyphicon glyphicon-star-empty"></span></a>
+        				<a href="#"><span class="glyphicon glyphicon-star-empty"></span></a>
+        				<a href="#"><span class="glyphicon glyphicon-star-empty"></span></a>
+        				<a href="#"><span class="glyphicon glyphicon-star-empty"></span></a> 
+        			</div>
+        			<button style="margin-top: 5px;" type="button" class="btn btn-danger">Add to My Favorite</button>
+        			<button style="margin-top: 55px;" type="button" class="btn btn-success">Order</button>
+        		</div>
+        	</div>
+			<div class="modal fade" id="myModal">
+  				<div style="width: 650px;height: 590px;" class="modal-dialog">
+    				<div class="modal-content">
+      					<div class="modal-header">
+        					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        					<h4 class="modal-title">Fried Potato</h4>
+      					</div>
+      					<div class="modal-body">
+        					<%=image_tag("menu.jpg",:size=>"600x540")%>
+      					</div>
+    				</div><!-- /.modal-content -->
+  				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+    </tr>
+  </table>
+</div>
+<div class="divider"></div>
+<%end%>
+
+<ul class="pagination">
+  <li><a href="#">&laquo;</a></li>
+  <li class="active"><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul>
+
 <%end%>
