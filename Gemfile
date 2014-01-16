@@ -14,19 +14,19 @@ gem 'carrierwave','0.8.0'
 gem 'rmagick'
 gem 'spreadsheet'
 group :development, :test do
-  gem 'rspec-rails'
-  gem 'guard-rspec'
-  gem 'guard-spork'
-  gem 'spork'
-  gem 'debugger'
+  #gem 'rspec-rails'
+  #gem 'guard-rspec'
+  #gem 'guard-spork'
+  #gem 'spork'
+  #gem 'debugger'
 
-  gem 'rb-fsevent', :require => false
+  #gem 'rb-fsevent', :require => false
 
   gem "faker"
 end
 
 group :test do
-  gem 'capybara'
+  #gem 'capybara'
   gem 'factory_girl_rails'
   
   #OS X specific gems for notification via guard-rspec

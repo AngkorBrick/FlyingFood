@@ -19,7 +19,7 @@ FlyingFood::Application.configure do
 
   # Generate digests for assets URLs
   config.assets.digest = true
-
+  config.assets.precompile += %w[ *.css *.js *.png *.jpg *.jpeg *.gif *.svg *.eot *.woff *.ttf]  #need to manually specify all non-default assets that should be precompiled for prod (basically all scripts, stylesheets, & images)
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
 
@@ -64,4 +64,5 @@ FlyingFood::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
+  #config.assets.precompile += %w( .svg .eot .woff .ttf )
 end

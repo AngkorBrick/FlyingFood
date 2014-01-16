@@ -1,7 +1,7 @@
 development:
   adapter: mysql2
   encoding: UTF8
-  database: ff_dev
+  database: flying_dev
   pool: 5
   username: root
   password: "clroot0987"
@@ -11,7 +11,7 @@ development:
 test:
   adapter: mysql2
   encoding: UTF8
-  database: ff_test
+  database: flying_test
   pool: 5
   username: root
   password: "clroot0987"
@@ -21,7 +21,7 @@ test:
 production:
   adapter: mysql2
   encoding: UTF8
-  database: ff
+  database: flying
   pool: 5
   username: root
   password: "clroot0987"
