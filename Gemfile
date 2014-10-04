@@ -6,7 +6,7 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 #gem 'sqlite3'
-gem 'mysql2', '0.3.11'
+gem 'mysql2', '0.3.16'
 gem 'devise','3.0.3'
 gem 'will_paginate', '~> 3.0'
 gem 'jquery-rails'

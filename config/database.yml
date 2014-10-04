@@ -1,6 +1,6 @@
 development:
   adapter: mysql2
-  encoding: UTF8
+  encoding: utf8
   database: flying_dev
   pool: 5
   username: root
@@ -10,7 +10,7 @@ development:
   
 test:
   adapter: mysql2
-  encoding: UTF8
+  encoding: utf8
   database: flying_test
   pool: 5
   username: root
@@ -20,7 +20,7 @@ test:
 
 production:
   adapter: mysql2
-  encoding: UTF8
+  encoding: utf8
   database: flying
   pool: 5
   username: root

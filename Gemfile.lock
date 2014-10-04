@@ -28,7 +28,6 @@ GEM
     activesupport (3.2.13)
       i18n (= 0.6.1)
       multi_json (~> 1.0)
-    addressable (2.3.5)
     arel (3.0.3)
     bcrypt-ruby (3.0.1-x86-mingw32)
     breadcrumbs_on_rails (2.3.0)
@@ -49,7 +48,6 @@ GEM
       railties (>= 3.2.6, < 5)
       warden (~> 1.2.3)
     erubis (2.7.0)
-    excon (0.31.0)
     execjs (2.0.2)
     factory_girl (4.3.0)
       activesupport (>= 3.0.0)
@@ -59,15 +57,6 @@ GEM
     faker (1.2.0)
       i18n (~> 0.5)
     growl (1.0.3)
-    heroku (3.2.2)
-      heroku-api (~> 0.3.7)
-      launchy (>= 0.3.2)
-      netrc (~> 0.7.7)
-      rest-client (~> 1.6.1)
-      rubyzip
-    heroku-api (0.3.16)
-      excon (~> 0.27)
-      multi_json (~> 1.8.2)
     hike (1.2.3)
     i18n (0.6.1)
     journey (1.0.4)
@@ -75,15 +64,12 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.1)
-    launchy (2.4.2)
-      addressable (~> 2.3)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     multi_json (1.8.4)
-    mysql2 (0.3.11-x86-mingw32)
-    netrc (0.7.7)
+    mysql2 (0.3.16)
     orm_adapter (0.5.0)
     polyglot (0.3.3)
     rack (1.4.5)
@@ -112,12 +98,9 @@ GEM
     rb-fsevent (0.9.4)
     rdoc (3.12.2)
       json (~> 1.4)
-    rest-client (1.6.7)
-      mime-types (>= 1.16)
     rmagick (2.13.2)
     ruby-ole (1.2.11.7)
     ruby_gntp (0.3.4)
-    rubyzip (1.1.0)
     sass (3.2.13)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -155,9 +138,8 @@ DEPENDENCIES
   factory_girl_rails
   faker
   growl
-  heroku
   jquery-rails
-  mysql2 (= 0.3.11)
+  mysql2 (= 0.3.16)
   rails (= 3.2.13)
   rb-fsevent
   rmagick
